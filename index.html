@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cassiele Almeida | Portfólio acadêmico</title>
+  <meta name="description" content="Portfólio acadêmico de Cassiele Silveira Tolentino de Almeida, estudante de Informática no IFMS: atividades, projetos, eventos e habilidades.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="side" id="topo">
+    <div class="side-top">
+      <a class="brand" href="#sobre">Cassiele Almeida</a>
+      <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">☰</button>
+    </div>
+    <p class="side-sub">Informática · IFMS</p>
+    <nav id="nav" aria-label="Seções do site">
+      <a href="#sobre">Sobre</a>
+      <a href="#atividades">Atividades acadêmicas</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#eventos">Feiras e eventos</a>
+      <a href="#sites">Sites desenvolvidos</a>
+      <a href="#contato">Habilidades e contato</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section id="sobre" class="hero">
+      <p class="kicker">Estudante de Informática</p>
+      <h1>Olá, eu sou a Cassiele.</h1>
+      <p class="lead">Estudo Informática no Instituto Federal de Mato Grosso do Sul (IFMS). Gosto de programação web e já desenvolvi aplicações com React e uma API com Node.js. Neste portfólio reúno o que estudei, os projetos que construí e minha participação na FECINOVA.</p>
+      <dl class="facts">
+        <div><dt>Nome completo</dt><dd>Cassiele Silveira Tolentino de Almeida</dd></div>
+        <div><dt>Curso</dt><dd>Informática</dd></div>
+        <div><dt>Instituição</dt><dd>IFMS</dd></div>
+      </dl>
+      <p><a class="btn" href="#projetos">Ver projetos</a> <a class="btn ghost" href="#contato">Entrar em contato</a></p>
+    </section>
+
+    <section id="atividades">
+      <h2>Atividades acadêmicas</h2>
+      <p class="intro">Disciplinas técnicas do curso, do semestre atual ao primeiro.</p>
+      <ol class="timeline">
+        <li>
+          <time>6º semestre (em andamento)</time>
+          <h3>Engenharia de Software 2, Redes 2 e Segurança da Informação</h3>
+          <p>Também estou cursando Programação para Aplicações Cliente 4 e Servidor 3, Programação para Dispositivos Móveis 2, Gerência e Configurações de Serviços de Internet e Estatística.</p>
+          <span class="tag">Semestre</span>
+        </li>
+        <li>
+          <time>5º semestre</time>
+          <h3>Engenharia de Software 1 e Redes de Computadores 1</h3>
+          <p>Programação para Aplicações Cliente 3 e Servidor 2, e a primeira disciplina de Programação para Dispositivos Móveis.</p>
+          <span class="tag">Semestre</span>
+        </li>
+        <li>
+          <time>4º semestre</time>
+          <h3>Programação para Aplicações Cliente 2 e Servidor 1</h3>
+          <p>Primeiro contato com programação do lado do servidor, depois de dois semestres de front-end.</p>
+          <span class="tag">Semestre</span>
+        </li>
+        <li>
+          <time>3º semestre</time>
+          <h3>Banco de Dados 1 e Programação para Aplicações Cliente 1</h3>
+          <p>Também cursei Linguagem e Técnicas de Programação e Projeto Integrador 2.</p>
+          <span class="tag">Semestre</span>
+        </li>
+        <li>
+          <time>2º semestre</time>
+          <h3>Algoritmos 2 e Linguagem de Apresentação e Estruturação de Conteúdos</h3>
+          <p>Continuação da lógica de programação, mais o Projeto Integrador 1.</p>
+          <span class="tag">Semestre</span>
+        </li>
+        <li>
+          <time>1º semestre</time>
+          <h3>Algoritmos 1, Sistemas Operacionais e Design de Interfaces e Usabilidade</h3>
+          <p>Também cursei Informática Aplicada e Instalação e Manutenção de Computadores.</p>
+          <span class="tag">Semestre</span>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <p class="intro">Projetos desenvolvidos nas disciplinas de programação e o que fiz em cada um.</p>
+      <div class="chips" role="group" aria-label="Filtrar projetos">
+        <button class="chip on" type="button" data-filtro="todos">Todos</button>
+        <button class="chip" type="button" data-filtro="front">Front-end</button>
+        <button class="chip" type="button" data-filtro="back">Back-end</button>
+      </div>
+      <div class="grid">
+        <article class="card" data-cat="front">
+          <h3>Mural de Avisos</h3>
+          <p>Aplicação web para publicar e editar os avisos e recados da turma. Os avisos são carregados de uma API pública, com mensagens de carregamento e de erro.</p>
+          <p class="role"><strong>Minha participação:</strong> criei os componentes (formulário, lista e cartão de aviso), a validação do formulário e o tratamento de falhas da API.</p>
+          <p class="stack">React · Vite · JavaScript · API REST</p>
+          <a href="https://github.com/trice15/mural-de-avisos" target="_blank" rel="noopener">Ver código no GitHub</a>
+        </article>
+        <article class="card" data-cat="front">
+          <h3>Gerenciador de usuários</h3>
+          <p>Aplicação que lista, cria, edita e exclui usuários consumindo uma API REST. As requisições ficam em um módulo próprio e os erros viram mensagens claras (404, 500, falha de rede).</p>
+          <p class="role"><strong>Minha participação:</strong> desenvolvi as telas, o módulo de requisições, o cancelamento de chamadas com AbortController e a exclusão com retorno ao estado anterior em caso de erro.</p>
+          <p class="stack">React · Vite · JavaScript · API REST</p>
+          <a href="https://github.com/trice15/andre" target="_blank" rel="noopener">Ver código no GitHub</a>
+        </article>
+        <article class="card" data-cat="back">
+          <h3>API da Biblioteca</h3>
+          <p>API para controlar livros, leitores e empréstimos, com cadastro, consulta, edição e exclusão. Calcula os dias de atraso e a contagem de dias úteis após o prazo de devolução.</p>
+          <p class="role"><strong>Minha participação:</strong> organizei o projeto em rotas e controllers e programei as regras dos empréstimos.</p>
+          <p class="stack">Node.js · Express · JavaScript</p>
+          <a href="https://github.com/trice15/Projeto-parcial" target="_blank" rel="noopener">Ver código no GitHub</a>
+        </article>
+      </div>
+      <p class="vazio" id="vazio" hidden>Nenhum projeto nesta categoria ainda.</p>
+    </section>
+
+    <section id="eventos">
+      <h2>Feiras e eventos</h2>
+      <p class="intro">Participações, apresentações e premiações.</p>
+      <ul class="events">
+        <li>
+          <time>2026</time>
+          <div>
+            <h3>FECINOVA</h3>
+            <p>Participei da feira apresentando o trabalho MIGRAÇÕES INTERNACIONAIS, COMUNIDADES TRANSNACIONAIS E POLÍTICAS PÚBLICAS EM NOVA ANDRADINA, MATO GROSSO DO SUL em um banner.</p>
+            <span class="tag award">2º lugar: banner mais bonito</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="sites">
+      <h2>Sites desenvolvidos</h2>
+      <p class="intro">Aplicações web que desenvolvi com React.</p>
+      <div class="grid sites">
+        <article class="card site">
+          <a href="https://github.com/trice15/mural-de-avisos" target="_blank" rel="noopener"><img src="assets/preview.webp" alt="Repositório mural-de-avisos no GitHub" loading="lazy" width="1200" height="570"></a>
+          <h3>Mural de Avisos</h3>
+          <p>Painel para publicar e editar avisos da turma, com formulário validado.</p>
+          <a href="https://github.com/trice15/mural-de-avisos" target="_blank" rel="noopener">Ver código no GitHub</a>
+        </article>
+        <article class="card site">
+          <a href="https://github.com/trice15/andre" target="_blank" rel="noopener"><img src="assets/andre.webp" alt="Repositório andre no GitHub" loading="lazy" width="1200" height="570"></a>
+          <h3>Gerenciador de usuários</h3>
+          <p>Cadastro de usuários com lista, formulário e tratamento de erros.</p>
+          <a href="https://github.com/trice15/andre" target="_blank" rel="noopener">Ver código no GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Habilidades e contato</h2>
+      <h3 class="sub">Front-end</h3>
+      <ul class="skills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li></ul>
+      <h3 class="sub">Back-end</h3>
+      <ul class="skills"><li>Node.js</li><li>Express</li><li>APIs REST</li></ul>
+      <h3 class="sub">Outras áreas</h3>
+      <ul class="skills"><li>Git e GitHub</li><li>Banco de dados</li><li>Redes de computadores</li><li>Algoritmos</li></ul>
+      <h3 class="sub">Fale comigo</h3>
+      <ul class="contact">
+        <li><span>E-mail</span> <a href="mailto:cassiele.almeida@estudante.ifms.edu.br" id="email">cassiele.almeida@estudante.ifms.edu.br</a> <button class="mini" id="copiar" type="button">Copiar</button></li>
+        <li><span>GitHub</span> <a href="https://github.com/trice15" target="_blank" rel="noopener">github.com/trice15</a></li>
+      </ul>
+    </section>
+
+    <footer>© <span id="ano"></span> Cassiele Silveira Tolentino de Almeida. <a href="#topo">Voltar ao topo</a></footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
