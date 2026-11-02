@@ -3,9 +3,6 @@
 Site pessoal com minha trajetória no curso de Informática do IFMS, projetos, eventos e habilidades.
 Feito com HTML, CSS e JavaScript, sem frameworks.
 
-**Site:** https://trice15.github.io/portfolio/
-**Repositório:** https://github.com/trice15/portfolio
-
 ## Estrutura
 - `index.html`: conteúdo de todas as seções
 - `css/style.css`: visual, tema escuro e layout para celular
